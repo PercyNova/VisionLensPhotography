@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Hero Image Slider
+    // Preload hero images
     const heroImages = [
         '/assets/img/hero/hero1.png',
         '/assets/img/hero/hero2.png',
@@ -35,24 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
         '/assets/img/hero/hero5.png',
         '/assets/img/hero/hero6.png'
     ];
-    let currentImageIndex = 0;
 
-    function changeHeroImage() {
-        const hero = document.querySelector('.hero');
-        hero.style.backgroundImage = `url(${heroImages[currentImageIndex]})`;
-        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+    function preloadImages(images) {
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
     }
 
-    // Change hero image every 5 seconds
-    setInterval(changeHeroImage, 5000);
+    preloadImages(heroImages);
 
-    // Initial hero image
-    changeHeroImage();
+    // Set initial background images for each slide
+    const slides = document.querySelectorAll('.slide');
+    heroImages.forEach((image, index) => {
+        slides[index].style.backgroundImage = `url(${image})`;
+    });
 });
-
-function closeMobileMenu() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const menuToggle = document.querySelector('.menu-toggle');
-    mobileMenu.classList.remove('active');
-    menuToggle.classList.remove('active');
-}
