@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionLens Photography</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-button" onclick="closeMobileMenu()">×</button>
+        <ul>
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="/pages/portfolio.html" onclick="closeMobileMenu()">Portfolio</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About Me</a></li>
+            <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+            <li><a href="#booking" onclick="closeMobileMenu()">Booking</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>VisionLens Photography</h1>
+            <p>Capturing moments, telling stories.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#booking" class="btn btn-secondary">Book a Shoot</a>
+            </div>
+        </div>
+    </section>
+
+<hr/>
+     <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hello! I'm Azile Mbabane, a passionate photographer based in Cape Town. With over 4 years of experience in capturing life's most beautiful moments, I specialize in portrait, event, wedding, and brand photography.</p>
+                    <p>My love for photography started when I was just a teenager, and it has grown into a lifelong passion. I believe that every photograph tells a story, and my goal is to capture those stories in the most authentic and artistic way possible.</p>
+                    <p>When I'm not behind the camera, you'll find me exploring new places, trying out different cuisines, or reading up on the latest trends in photography.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/assets/img/photographer.png" alt="John Doe - Photographer">
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>1000+</h3>
+                    <p>Photoshoots Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<hr/>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="/assets/img/service/ser1-min.png" alt="Portrait Shoots">
+                <h3>Portrait Shoots</h3>
+                <p>Professional portrait photography</p>
+            </div>
+            <div class="service-card">
+                <img src="/assets/img/service/ser2-min.png" alt="Event Coverage">
+                <h3>Event Coverage</h3>
+                <p>Capturing memorable moments</p>
+            </div>
+            <div class="service-card">
+                <img src="/assets/img/service/ser3-min.png" alt="Brand Photography">
+                <h3>Brand Photography</h3>
+                <p>Visual storytelling for businesses</p>
+            </div>
+            <div class="service-card">
+                <img src="/assets/img/service/ser4-min.png" alt="Wedding Photography">
+                <h3>Wedding Photography</h3>
+                <p>Documenting your special day</p>
+            </div>
+            <div class="service-card">
+                <img src="/assets/img/service/ser5-min.png" alt="Product Photography">
+                <h3>Product Photography</h3>
+                <p>High-quality product images</p>
+            </div>
+            <div class="service-card">
+                <img src="/assets/img/service/ser6-min.png" alt="Custom Shoots">
+                <h3>Custom Shoots</h3>
+                <p>Tailored to your unique vision</p>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book a Shoot</h2>
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number">
+                <select>
+                    <option>Type of Shoot</option>
+                    <option>Portrait</option>
+                    <option>Event</option>
+                    <option>Wedding</option>
+                </select>
+            </div>
+            <textarea placeholder="Special Requests"></textarea>
+            <button type="submit" class="btn btn-primary">Request Booking</button>
+        </form>
+    </section>
+
+    <hr/>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VisionLens Photography</h3>
+                <p>Capturing life's most beautiful moments</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="#about">About Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Pinterest</a>
+                </div>
+                <p>Contact: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 VisionLens Photography. Created by <a href="https://percynova.com">Percy Nova</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
