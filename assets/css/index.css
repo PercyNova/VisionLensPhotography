@@ -597,4 +597,18 @@ footer {
     .stat p {
         font-size: 0.9rem;
     }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    input, select {
+        margin: 0.3rem 0;
+    }
+    
+    .booking form, .contact form {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
 }
